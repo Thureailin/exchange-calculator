@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+@font-face{
+    font-family: "mm";
+    font-weight: normal;
+    src: url("../fonts/MyanmarSagar.ttf");
+}
+:root{
+    --primary : #2CD1EE;
+    --secondary : #707070;
+    --light : #ffffff;
+    --dark : #000000;
+    --br :5px;
+    --secondary-soft:#f2f2f2;
+
+}
+
+.mm{
+    font-family: "mm";
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Scheherazade New', 'mm';
+    color: var(--secondary)
+}
+.divder{
+    background-color: var(--secondary);
+    height:5px;
+    border-radius: var(--br);
+}
+.app{
+
+    width: 700px;
+    margin:100px auto;
+    
+
+}
+.output{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-container{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    width:50px;
+}
+.brand{
+    margin-left:10px;
+    font-size: 30px;
+}
+.result{
+    font-size:50px;
+    align-items: center;
+    
+}
+.result-container{
+    display:flex;
+    align-items: center;
+
+}
+.calc{
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px;
+
+
+}
+.container{
+    width:150px;
+}
+.input,.from,.to{
+    width:100%;
+    padding:5px 10px;
+    margin-bottom:10px;
+    border-radius: var(--br);
+    border:1px solid var(--secondary);
+    
+}
+.container label{
+    display:block;
+}
+
+.calc-btn{
+    width:100%;
+    height:100%;
+    border-radius: var(--br);
+    background-color: var(--primary);
+    color:var(--light);
+    border:1px solid var(--primary);
+    font-size:20px;
+    text-transform:uppercase ;
+
+}
+.history {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+   
+    width: 100%;
+  }
+  
+ .history td,.history th {
+   
+    padding: 8px;
+    border-radius: var(--br);
+  }
+  
+ 
+  
+ .history tr:hover {background-color: #ddd;}
+  
+ .history th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  .history th:last-child{
+      text-align: right;
+  }
+  .history tr td:last-child{
+      text-align: right;
+  }
+  .history tr{
+      background-color: #e6e4e4;
+  }
+#rowSpacer td{
+    text-align: center !important;
+}
+@media screen and (max-width: 480px) {
+    .app{
+        width: 96%;
+        margin:30px auto;
+    }
+    .output{
+        flex-flow: column;
+        align-items:flex-end;
+    }
+    .brand-container{   
+        width:100%;
+
+    }
+  
+    .calc{
+        flex-wrap:wrap;
+    }
+    .container{
+        width:100%;
+    }
+    .from-container,.to-container{
+        width:48%;;
+
+    }
+    .calc-btn{
+        padding:15px 0;
+    }
+    .input,.from,.to{
+        
+        padding:15px 10px;
+        
+        
+    }
+}
+.mode-change{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--dark);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.mode-change .fas{
+    color: var(--light) !important;
+}
+
